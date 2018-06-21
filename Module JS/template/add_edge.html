@@ -1,0 +1,26 @@
+<div>
+	<table style="width:100%"  ng-repeat = "(key,device) in detail">
+		<tr>
+			<th rowspan="4" style="width:30%">{{key}}</th>
+			<th style="width:20%">Name</th>
+			<td>{{device.name}}</td>
+		</tr>
+		<tr>
+			<th style="width:30%">Port</th>
+			<td>
+				<select ng-model="device.port" style="width:70%">
+					<option ng-repeat="(key,port) in device.ports">{{key}}</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>MAC</th>
+			<td>{{device.ports[device.port].MAC}}</td>
+		</tr>
+		<tr>
+			<th>Port Status</th>
+			<td>{{device.ports[device.port].status}}</td>
+		</tr>
+    </table>
+    <button type="button" ng-click="confirm()">Insert</button>
+</div>

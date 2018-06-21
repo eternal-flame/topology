@@ -1,0 +1,38 @@
+<script src="components/angular/angular.min.js"></script>
+<script src="components/dialog/ngDialog.min.js"></script>
+<script src="topologyManager.js"></script>
+
+<link rel="stylesheet" type="text/css" href="components/dialog/ngDialog.min.css" />
+<link rel="stylesheet" type="text/css" href="components/dialog/ngDialog-theme-default.min.css" />
+
+<div ng-app="manager" ng-controller="MainCtrl">
+	<form accept-charset="utf-8" ng-submit="add()" style="float:right">
+		<ul>
+			<li>
+				<button type="submit" id="form" name="form" value="Create new topology">Create new topology</button>
+			</li>
+		</ul>
+	</form>
+	<table class="list-table" id="t5aeffdf469811">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="topo in topos">
+				<td>{{topo.id}}</td>
+				<td>
+					<a href="http://zabbixtest.com/zabbix.php?action=map.view&topoId={{topo.id}}">{{topo.name}}</a>
+				</td>
+				<td>
+					<a ng-click="topo.detail(topo.id)" href="#">Detail</a> 
+					<a ng-click="topo.modify(topo.id)" href="#">Modify</a> 
+					<a ng-click="topo.delete(topo.id)" href="#">Delete</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

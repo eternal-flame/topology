@@ -1,0 +1,47 @@
+<div>
+	<button type="button" ng-click="confirm()">Update</button>
+	<table style="width:100%">
+		<tr ng-repeat = "(key,value) in detail.general">
+			<th style="width:20%">{{key}}</th>
+			<td><input type="text" ng-model="detail.general[key]"></input></td>
+		</tr>
+		<tr>
+			<th>Type</th>
+			<td>
+				<select ng-model="detail.type">
+					<option>Computer</option>
+					<option>Router</option>
+					<option>Switch</option>
+					<option>Unknown</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+	    	<th>Number of Ports</th>
+	    	<td>{{detail.portLen}}</td>
+	    </tr>
+    </table>
+    <table style="width:100%" ng-repeat="(key,value) in detail.ports">
+		<tr>
+			<th rowspan="6" style="width:20%">Port {{key}}</th>
+			<th>Description</th>
+			<td style="width:50%"><input type="text" ng-model="value.des"></td>
+		</tr>
+		<tr>
+			<th>Speed</th>
+			<td style="width:50%"><input type="text" ng-model="value.speed"></td>
+		</tr>
+		<tr>
+			<th>MAC Address</th>
+			<td style="width:50%"><input type="text" ng-model="value.mac"></td>
+		</tr>
+		<tr>
+			<th>On</th>
+			<td style="width:50%"><input type="checkbox" ng-model="value.status"></td>
+		</tr>
+		<tr>
+			<th>Note</th>
+			<td style="width:50%"><input type="text" ng-model="value.note"></td>
+		</tr>
+    </table>
+</div>

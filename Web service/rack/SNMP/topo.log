@@ -1,0 +1,20 @@
+[topology.py:8 -             <module>() ] Started
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02'), (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89'), (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89'), (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81'), (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01')
+[topology.py:37 -  searchportIdFromMAC() ] Not found portID 2c:3e:cf:6b:05:81
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01'), (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81')
+[topology.py:37 -  searchportIdFromMAC() ] Not found portID 2c:3e:cf:6b:05:81
+[topology.py:64 - addNewTopoConnWithMac() ] Duplicate MAC
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01'), (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81')
+[topology.py:8 -             <module>() ] Started
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02'), (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89'), (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (31L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:89'), (19L, 2L, '192.168.10.1', '0c:f5:a4:ae:12:02')
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81'), (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01')
+[topology.py:37 -  searchportIdFromMAC() ] Not found portID 2c:3e:cf:6b:05:81
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01'), (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81')
+[topology.py:37 -  searchportIdFromMAC() ] Not found portID 2c:3e:cf:6b:05:81
+[topology.py:64 - addNewTopoConnWithMac() ] Duplicate MAC
+[topology.py:80 - addNewTopoConnWith2portId() ] connect is exist! (39L, 4L, '192.168.10.3', '0c:f5:a4:e3:c1:01'), (25L, 3L, '192.168.10.2', '2c:3e:cf:be:e1:81')

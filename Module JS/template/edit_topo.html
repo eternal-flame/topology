@@ -1,0 +1,48 @@
+<style>
+	input {
+		color: inherit;
+	}
+	th, td {
+	    padding: 15px;
+	    text-align: left;
+	}
+	table.topo-table th,table.topo-table td {
+	    border: 1.5px solid black;
+	    border-collapse: collapse;
+	}
+	table.topo-table th {
+		font-weight: bold;
+	}
+	table.topo-table {
+	    border-spacing: 5px;
+	}
+</style>
+
+<form>
+<button type="submit" ng-click="confirm()">Update</button>
+<h2><input type="text" ng-model=topo.name></input></h2>
+<h3>Rack controllers list</h3>
+<table style="width:100%" class="topo-table" ng-repeat="(id,rack) in topo.racks">
+	<tr>
+		<th>ID</th>
+		<td colspan="2">{{id}}</td>
+	</tr>
+	<tr>
+		<th>Name</th>
+		<td colspan="2"><input type="text" ng-model=rack.name required></input></td>
+	</tr>
+	<tr>
+		<th>IP</th>
+		<td colspan="2"><input type="text" ng-model=rack.ip required></input></td>
+	</tr>
+	<tr>
+		<th rowspan="{{getObjLength(rack.devices)+1}}">Devices List</th><h1></h1>
+		<th style="text-align: center">IP</th>
+		<th style="text-align: center">Community String</th>
+	</tr>
+	<tr ng-repeat="device in rack.devices">
+		<td style="text-align: center"><input type="text" ng-model=device.ip required></input></td>
+		<td style="text-align: center"><input type="text" ng-model=device.comString required></input></td>
+	</tr>
+</table>
+</form>

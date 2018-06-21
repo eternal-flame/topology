@@ -1,0 +1,30 @@
+"192.168.1.1": {},
+    "192.168.10.1": {
+        "44.62.207.190.225.137": {
+            "dot1dTpFdbAddress": "2c:3e:cf:be:e1:89",
+            "dot1dTpFdbPort": "2",
+            "dot1dTpFdbStatus": "3"
+        }
+    },
+    "192.168.10.2": {
+        "12.245.164.174.18.2": {
+            "dot1dTpFdbAddress": "0c:f5:a4:ae:12:02",
+            "dot1dTpFdbPort": "9",
+            "dot1dTpFdbStatus": "3"
+        },
+        "12.245.164.227.193.1": {
+            "dot1dTpFdbAddress": "0c:f5:a4:e3:c1:01",
+            "dot1dTpFdbPort": "1",
+            "dot1dTpFdbStatus": "3"
+        }
+    },
+    "192.168.10.3": {
+        "44.62.207.107.5.135": {
+            "dot1dTpFdbAddress": "2c:3e:cf:6b:05:87",
+            "dot1dTpFdbPort": "3",
+            "dot1dTpFdbStatus": "3"
+        },
+        "44.62.207.190.225.129": {
+            "dot1dTpFdbAddress": "2c:3e:cf:be:e1:81",
+            "dot1dTpFdbPort": "1",
+            "dot1dTpFdbStatus": "3"

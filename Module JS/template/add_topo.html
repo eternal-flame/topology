@@ -1,0 +1,36 @@
+<style>
+	input {
+		margin: 2px !important;
+	}
+	label {
+	    display: inline-block;
+	    clear: both;
+	    width: 120px;
+	}
+	.id-rack {
+		margin-left: 25px;
+	}
+</style>
+<form>
+	<h3>Add new topology</h3>
+	<label>Name:</label>
+	<input type="text" ng-model="name"></input></br></br>
+	<div style="margin-left: 25px" ng-repeat="rack in racks">
+		<h4>{{rack.name}}</h4></br>
+		<label>Name:</label><input type="text" ng-model="rack.name" required></input></br>
+		<label>IP:</label><input type="text" ng-model="rack.ip" required></input></br>
+		<button type="button" ng-click="deleteRack(racks, rack)">Delete rack controller</button></br></br>
+		<div style="margin-left: 45px" ng-repeat="device in rack.devices">
+			<label>IP:</label><input type="text" ng-model="device.ip" required></input></br>
+			<label>Community String:</label><input type="text" ng-model="device.comString" ng-change="device.confirm(device)" required></input></br>
+			<label>Confirm:</label><input type="text" ng-model="device.comConfirm" ng-change="device.confirm(device)" required></input>
+			<label style="color:{{device.checkColor}}">{{device.check}}</label>
+			<button type="button" ng-click="deleteDevice(rack.devices,device)">Delete device</button></br>
+			</br>
+		</div>
+		<button type="button" ng-click="addDevice(rack.devices)">Add new device</button></br>
+		</br>
+	</div>
+	<button type="button" ng-click="addRack(racks)">Add new rack controller</button></br></br>
+	<button type="submit" ng-click="submit()">Submit</button>
+</form>

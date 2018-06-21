@@ -1,0 +1,21 @@
+<div>
+	<table style="width:100%"  ng-repeat = "(key,obj) in detail">
+		<tr>
+			<th rowspan="4">{{key}}</th>
+			<th>Name</th>
+			<td style="width:50%"><p>{{obj.name}}</p></td>
+		</tr>
+		<tr>
+			<th>Port</th>
+			<td>{{obj.port}}</td>
+		</tr>
+		<tr>
+			<th>MAC</th>
+			<td>{{obj.mac}}</td>
+		</tr>
+		<tr>
+			<th>On</th>
+			<td><input type="checkbox" ng-model="obj.status" disabled></input></td>
+		</tr>
+    </table>
+</div>

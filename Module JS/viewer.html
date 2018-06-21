@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="map/components/vis/vis-network.min.css" />
+<link rel="stylesheet" type="text/css" href="map/components/dialog/ngDialog.min.css" />
+<link rel="stylesheet" type="text/css" href="map/components/dialog/ngDialog-theme-default.min.css" />
+<link rel="stylesheet" type="text/css" href="map/style/network.css" />
+
+<script src="map/components/vis/vis-network.min.js"></script>
+<script src="map/components/angular/angular.min.js"></script>
+<script src="map/components/dialog/ngDialog.min.js"></script>
+<script src="map/components/draggable/ngDraggable.js"></script>
+<script src="map/angular-vis.js"></script>
+<script src="map/topologyViewer.js"></script>
+
+<div id="network" ng-app="viewer" ng-controller="MainCtrl">
+	<div id="toolbox">
+		<div ng-repeat="obj in addableObjects">
+			<img border="0" name="image" alt="image" ng-drag="true" ng-drag-data="obj" ng-src="{{obj.image}}">
+		</div>
+	</div>
+	<div vis-network="" ng-drop="true" ng-drop-success="onDropComplete($data,$event)" data="data" options="options" utils="utils" network="network"></div>
+	<div id="contextmenu-node">
+		<div class="contextmenu-item" ng-repeat="util in utils">{{util.name}}</div>
+	</div>
+</div>
